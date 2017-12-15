@@ -20,3 +20,5 @@ router.post('/', controllerLivre.livre_ajout);
 
 //POST ajout d'un exemplaire de livre
 router.post('/:id/exemplaire', controllerLivre.livre_ajout_exemplaire);
+
+module.exports = router;
