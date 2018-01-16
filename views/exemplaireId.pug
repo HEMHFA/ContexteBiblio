@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .container.theme-showcase(role='main')
+    h1= 'Bibliothèque'
+    p Détails de l'exemplaire :
+    li= 'numéro : ' + exemplaire['numero'] + ' -> ' + exemplaire['statut'] + ' (livre n°' + exemplaire['livre'] + ')'
+    if exemplaire['statut'] == 'emprunté'
+        li= 'date limite de rendu : ' + exemplaire['dateretour']

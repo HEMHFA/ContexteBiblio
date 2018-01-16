@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    .container.theme-showcase(role='main')
+    h1= 'Bibliothèque'
+    p Liste des exemplaires :
+        each ex in listeExemplaires
+            li= 'exemplaire n° ' + ex['numero'] + ' -> ' + ex['statut']

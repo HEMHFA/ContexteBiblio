@@ -3,6 +3,6 @@ extends layout
 block content
     .container.theme-showcase(role='main')
     h1= 'Bibliothèque'
-    p Liste des livres
-        each livre in listeLivre
+    p Liste des livres :
+        each livre in listeLivres
                 li= livre['titre'] + ' -> ' + livre['resume']
